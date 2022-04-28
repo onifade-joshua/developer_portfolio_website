@@ -25,9 +25,9 @@
 
 @media(min-width:800px) {
      :root {
-        --fs-h1: 4.5rem;
-        --fs-h2: 3.5rem;
-        --fs-h3: 2.5rem;
+        --fs-h1: 4rem;
+        --fs-h2: 3rem;
+        --fs-h3: 2rem;
         --fs-body: 1.5rem;
     }
 }
@@ -52,7 +52,7 @@ body {
 /*the  container (putting all section into a conatiner that makes the text  in the web page  look's centered by giving all section padding 5em for left/right  2em for top/bottom )*/
 
 section {
-    padding: 2em 2em;
+    padding: 4em 2em;
 }
 
 img {
@@ -572,7 +572,7 @@ span {
     bottom: 10px;
     width: 50px;
     height: 50px;
-    border-radius: var(--br);
+    border-radius: 50%;
     background: var(--clr-accent);
     box-shadow: var(--bs);
     color: var(--clr-light);
