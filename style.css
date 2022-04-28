@@ -52,7 +52,7 @@ body {
 /*the  container (putting all section into a conatiner that makes the text  in the web page  look's centered by giving all section padding 5em for left/right  2em for top/bottom )*/
 
 section {
-    padding: 4em 2em;
+    padding: 5em 2em;
 }
 
 img {
