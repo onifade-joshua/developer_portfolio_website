@@ -15,10 +15,10 @@
     --clr-light: #fff;
     --clr-dark: #303030;
     --clr-accent: rgba(71, 73, 200, 0.859);
-    --fs-h1: 3.5rem;
-    --fs-h2: 2.5rem;
-    --fs-h3: 1.5rem;
-    --fs-body: 1.3rem;
+    --fs-h1: 3rem;
+    --fs-h2: 2rem;
+    --fs-h3: 1.3rem;
+    --fs-body: 1rem;
     --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, .25), 0.125em 0.125em 0.25em rgba(0, 0, 0, .15);
     --br: .58em;
 }
@@ -27,8 +27,8 @@
      :root {
         --fs-h1: 4rem;
         --fs-h2: 3rem;
-        --fs-h3: 2rem;
-        --fs-body: 1.5rem;
+        --fs-h3: 1.5rem;
+        --fs-body: 1.125rem;
     }
 }
 
@@ -46,6 +46,8 @@ body {
     font-family: var(--ff-primary);
     font-size: var(--fs-body);
     line-height: 1.5;
+    /* width: 400px;
+    max-width: 400px; */
 }
 
 
@@ -450,7 +452,7 @@ span {
 
 .portfolio {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -522,7 +524,7 @@ span {
 }
 
 
-/*Css Animation my-service section*/
+/*Css Animation*/
 
 @keyframes moveInLeft {
     0% {
