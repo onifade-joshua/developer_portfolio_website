@@ -7,9 +7,9 @@
 
 /*Custom style*/
 
- :root {
-    --ff-primary: 'Gill Sans MT', sans-serif;
-    --ff-secondary: 'Trebuchet MS', 'Gill Sans';
+:root {
+    --ff-primary: "Gill Sans MT", sans-serif;
+    --ff-secondary: "Trebuchet MS", "Gill Sans";
     --fw-reg: 300;
     --fw-bold: 900;
     --clr-light: #fff;
@@ -19,11 +19,11 @@
     --fs-h2: 2rem;
     --fs-h3: 1.3rem;
     --fs-body: 1rem;
-    --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, .25), 0.125em 0.125em 0.25em rgba(0, 0, 0, .15);
-    --br: .58em;
+    --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25), 0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
+    --br: 0.58em;
 }
 
-@media(min-width:800px) {
+@media (min-width: 800px) {
      :root {
         --fs-h1: 4rem;
         --fs-h2: 3rem;
@@ -66,7 +66,7 @@ strong {
     font-weight: var(--fw-bold);
 }
 
- :focus {
+:focus {
     outline: 3px solid var(--clr-accent);
     outline-offset: 3px;
 }
@@ -94,12 +94,12 @@ h3 {
 }
 
 .section__title {
-    margin-bottom: .25em;
+    margin-bottom: 0.25em;
 }
 
 .section__title--intro {
     font-weight: var(--fw-reg);
-    margin-bottom: .25em;
+    margin-bottom: 0.25em;
 }
 
 .section__title--intro strong {
@@ -116,7 +116,7 @@ h3 {
     background: var(--clr-accent);
     font-family: var(--ff-secondary);
     margin-bottom: 1em;
-    padding: .58em 1em;
+    padding: 0.58em 1em;
     border-radius: var(--br);
     font-weight: bold;
 }
@@ -152,7 +152,7 @@ span {
     right: 0;
     z-index: 100;
     transform: translateX(100%);
-    transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
+    transition: transform 250ms cubic-bezier(0.5, 0, 0.5, 1);
 }
 
 .nav__list {
@@ -183,7 +183,7 @@ span {
 }
 
 .nav-toggle {
-    padding: .5em;
+    padding: 0.5em;
     background: transparent;
     border: 0;
     cursor: pointer;
@@ -202,7 +202,7 @@ span {
 }
 
 .nav-open .hamburger {
-    transform: rotate(.625turn);
+    transform: rotate(0.625turn);
 }
 
 .nav-open .hamburger::before {
@@ -258,7 +258,7 @@ span {
     display: inline-block;
 }
 
-@media(min-width:600px) {
+@media (min-width: 600px) {
     .intro {
         display: grid;
         grid-template-areas: "img title" "img subtitle";
@@ -321,7 +321,7 @@ span {
     margin: 0 auto;
 }
 
-@media(min-width:800px) {
+@media (min-width: 800px) {
     .services {
         display: flex;
         max-width: 1000px;
@@ -410,7 +410,7 @@ span {
     border-radius: var(--br);
 }
 
-@media(min-width:600px) {
+@media (min-width: 600px) {
     .about-me {
         display: grid;
         grid-template-columns: 1fr 250px;
@@ -463,7 +463,7 @@ span {
 }
 
 .portfolio__img {
-    transition: transform 750ms cubic-bezier(.5, 0, .5, 1), opacity 250ms linear;
+    transition: transform 750ms cubic-bezier(0.5, 0, 0.5, 1), opacity 250ms linear;
 }
 
 .portfolio__item:focus {
@@ -474,7 +474,7 @@ span {
 .portfolio__img:hover,
 .portfolio__item:focus .portfolio__img {
     transform: scale(1.2);
-    opacity: .75;
+    opacity: 0.75;
 }
 
 
@@ -516,11 +516,11 @@ span {
 }
 
 .social-list__item {
-    margin: 0 .5em;
+    margin: 0 0.5em;
 }
 
 .social-list__link {
-    padding: .5em;
+    padding: 0.5em;
 }
 
 
@@ -581,8 +581,16 @@ span {
     outline: none;
     cursor: pointer;
     border: none;
+    font-size: 20px;
+    transition: all 0.4s;
+    visibility: hidden;
+    opacity: 0;
 }
 
-#btnScrollToTop:active {
-    background: var(--clr-dark);
+#btnScrollToTop:active,
+#btnScrollToTop:hover {
+    background: #fff;
+    color: var(--clr-dark);
+    visibility: visible;
+    opacity: 1;
 }
