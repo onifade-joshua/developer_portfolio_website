@@ -568,10 +568,10 @@ span {
 
 /*Btn scroll to the top*/
 
-#btnScrollToTop {
+#btn-scroll-to-top {
     position: fixed;
-    right: 10px;
-    bottom: 10px;
+    right: 25px;
+    bottom: 25px;
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -582,15 +582,47 @@ span {
     cursor: pointer;
     border: none;
     font-size: 20px;
-    transition: all 0.4s;
-    visibility: hidden;
-    opacity: 0;
+    transition: all ease-in;
+    animation: bounce 1.5s infinite;
 }
 
-#btnScrollToTop:active,
-#btnScrollToTop:hover {
+#btn-scroll-to-top:active,
+#btn-scroll-to-top:hover {
     background: #fff;
     color: var(--clr-dark);
-    visibility: visible;
+    bottom: 25px;
+}
+/*Keyframes for scroll up button*/
+@keyframes bounce{
+0%{
+    transform: translate(0);
+}
+20%{
+    transform: translateY(15px);
+}40%{
+    transform: translate(50);
+}
+}
+
+@-webkit-keyframes bounce{
+ 0%{
+  transform: translate(0);
+   }
+
+ 20%{
+    transform: translateY(15px);
+  }
+ 40%{
+    transform: translate(50);
+  }
+
+}
+/*Arrow fade in & out*/
+.fade-in{
     opacity: 1;
+    transition: 0.3s all ease-in;
+}
+.fade-out{
+    opacity: 0;
+    transition: 0.3s all ease-out;
 }
