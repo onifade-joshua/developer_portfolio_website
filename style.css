@@ -570,8 +570,8 @@ span {
 
 #btn-scroll-to-top {
     position: fixed;
-    right: 25px;
-    bottom: 25px;
+    right: 10px;
+    bottom: 35px;
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -598,9 +598,9 @@ span {
     transform: translate(0);
 }
 20%{
-    transform: translateY(15px);
+    transform: translateY(10px);
 }40%{
-    transform: translate(50);
+    transform: translate(0);
 }
 }
 
@@ -610,19 +610,19 @@ span {
    }
 
  20%{
-    transform: translateY(15px);
+    transform: translateY(10px);
   }
  40%{
-    transform: translate(50);
+    transform: translate(0);
   }
 
 }
 /*Arrow fade in & out*/
 .fade-in{
     opacity: 1;
-    transition: 0.3s all ease-in;
+    transition: 1s all ease-in;
 }
 .fade-out{
     opacity: 0;
-    transition: 0.3s all ease-out;
+    transition: 1s all ease-out;
 }
